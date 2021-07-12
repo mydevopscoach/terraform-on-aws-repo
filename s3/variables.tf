@@ -24,3 +24,9 @@ variable "versioning" {
     default     = true
 }
 
+variable "acl" {
+    type        = string
+    description = " Defaults to private "
+    default     = "private"
+}
+
