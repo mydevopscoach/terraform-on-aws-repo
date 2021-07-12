@@ -5,6 +5,9 @@ provider "aws" {
 resource "aws_s3_bucket" "my-s3-bucket" {
   bucket_prefix = "my-s3bucket-"
   acl = "private"
+   versioning = {
+    enabled = true
+  }
   tags = {
     Name = "My S3 bucket"
     Environment = "POC"
