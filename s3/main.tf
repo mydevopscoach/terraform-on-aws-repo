@@ -1,4 +1,5 @@
 provider "aws" {
+  profile = "SKMLVZM_TERRAFORM"
   region = var.aws_region
 }
 
